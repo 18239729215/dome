@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var kenan={
+				name:"江户川柯南",
+				age:17,
+				sex:"男",
+				add:"日本",
+				tel:"1234567",
+				show:function(){
+					alert("你好");
+				}
+			}
+			for(var x in kenan){
+				document.write(x+"="+kenan[x])
+			}
+			var text="我是\"JavaScript\"JavaScript是一门弱类型语言 "
+			alert(text);
+			//获取第一次出现字符“Java”的下标位置
+			console.log(text.substring(3,7));
+			//获取从下标15开始到25结束的字符串。
+			console.log(text.substring(15,25));
+			//获取从下标28开始的字符串
+			console.log(text.slice(28));
+			//将带有引号的JavaScript替换为“张三”
+			console.log(text.replace("JavaScript","张三"));
+			//将不带引号的JavaScript转换为大写，并输出这句话。
+			var a=text.slice(0,14);
+			var num=text.slice(-19,-9);
+			var xx=num.toUpperCase();
+			var wz=text.slice(-9,-1);
+			var cjw=a+xx+wz;
+			console.log(cjw);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
